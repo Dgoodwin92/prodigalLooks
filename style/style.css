@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap'); 
 
 body {
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -11,8 +11,25 @@ overflow-x: hidden;
 
 .title-img {
     height: 85vh;
+    border-radius: 10px;
 }
 
 .contact-us {
     height: 80vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .title-img {
+        height: 65vh;
+        width: 100%;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    #back-t {
+        margin-top: 5px;
+    }
+    #front-t {
+        margin-bottom: 5px;
+    }
 }
