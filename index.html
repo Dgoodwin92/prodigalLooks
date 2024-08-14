@@ -16,26 +16,61 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact Us</a>
               </li>            
             </ul>
           </div>
         </div>
       </nav>
-      <div class="container d-flex justify-content-center">
-        <div class="row">
+
+      <div class="container d-flex justify-content-center mt-4">
+        <div class="row img-row">
           <div class="col-s-12 col-lg-12 col-xl-6">
-            <img src="./media/img/front-tshirt.jpg" alt="Person facing camera, wearing a t-shirt with Citizen of Heaven printed on the front." class="title-img rounded">
+            <img src="./media/img/front-tshirt.jpg" id="front-t" alt="Person facing camera, wearing a t-shirt with Citizen of Heaven printed on the front." class="title-img rounded">
           </div>
           <div class="col-s-12 col-lg-12 col-xl-6">
-            <img src="./media/img/back-tshirt.jpg" alt="The back of a person, wearing a t-shirt with Faith over Fear printed on the back in a circle." class="title-img rounded">
+            <img src="./media/img/back-tshirt.jpg" id="back-t" alt="The back of a person, wearing a t-shirt with Faith over Fear printed on the back in a circle." class="title-img rounded">
           </div>
         </div>
+      </div>
+      <div class="container d-flex justify-content-center m-auto mt-4">
+        <div class="row">
+          <div class="col-12">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container contact-us">
+        <form class="row needs-validation g-2 justify-content-center" novalidate>
+          
+          <div class="col-md-6">
+            <label for="full-name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="full-name" value="" required>
+            <div class="valid-feedback">
+              Amazing!
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="email-add" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email-add" value="" required>
+            <div class="valid-feedback">
+              Amazing!
+            </div>
+          </div>
+            <div class="col-12">
+              <label for="messageArea" class="form-label">Email Message</label>
+              <textarea class="form-control" id="messageArea" placeholder="Required message" required></textarea>
+                <div class="invalid-feedback">
+                  Please enter a message in the textarea.
+                </div>
+            </div>
+          </div>
+        </form>
       </div>
 </body>
 </html>
