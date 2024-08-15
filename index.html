@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#">Prodigal Looks</a>
+          <a class="navbar-brand logo" href="#">
+            <img src="./media/img/logo-nav-2.png" alt="Prodigal Looks Logo" width="90" height="55">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -21,14 +24,20 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>            
             </ul>
           </div>
         </div>
       </nav>
-
+      <!-- Title -->
+      <div class="container m-5">
+        <h1 class="page-title">Prodigal Looks</h1>
+        <h3 class="page-sub-title">Christian Apparel</h3>
+      </div>
+      <!--Images of Products-->
       <div class="container d-flex justify-content-center mt-4">
+
         <div class="row">
           <div class="col-12 col-lg-12 col-xl-6">
             <img src="./media/img/front-tshirt.jpg" id="front-t" alt="Person facing camera, wearing a t-shirt with Citizen of Heaven printed on the front." class="title-img">
@@ -41,30 +50,31 @@
       <div class="container d-flex justify-content-center m-auto mt-4">
         <div class="row">
           <div class="col-12">
-            <h2>Contact Us</h2>
+            <h2 class="contact-title">Contact Us</h2>
           </div>
         </div>
       </div>
-      <div class="container contact-us">
+      <!--Contact Us Container-->
+      <div class="container contact-us" id="contact">
         <form class="row needs-validation g-2 justify-content-center" novalidate>
           
           <div class="col-md-6">
             <label for="full-name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="full-name" value="" required>
+            <input type="text" class="form-control form-style" id="full-name" value="" required>
             <div class="valid-feedback">
               Amazing!
             </div>
           </div>
           <div class="col-md-6">
             <label for="email-add" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email-add" value="" required>
+            <input type="email" class="form-control form-style" id="email-add" value="" required>
             <div class="valid-feedback">
               Amazing!
             </div>
           </div>
             <div class="col-12">
               <label for="messageArea" class="form-label">Email Message</label>
-              <textarea class="form-control" id="messageArea" placeholder="Required message" required></textarea>
+              <textarea class="form-control form-style" id="messageArea" placeholder="Required message" required></textarea>
                 <div class="invalid-feedback">
                   Please enter a message in the textarea.
                 </div>

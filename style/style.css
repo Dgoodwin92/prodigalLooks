@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap'); 
 
 body {
     overflow-x: hidden;
+    background-color: #e3c7be;
+}
+
+.navbar {
+    background-color: #e3c7be;
 }
 
 .logo {
@@ -12,12 +17,44 @@ body {
 .title-img {
     height: 85vh;
     border-radius: 10px;
+    box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);
 }
 
 .contact-us {
-    height: 80vh;
+    height: 50vh;
 }
 
+#messageArea {
+    height: 200px;
+}
+
+.form-style {
+    box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.40);
+}
+
+.page-title {
+    font-size: 6rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.page-sub-title {
+    font-size: 3rem;
+    font-family: "Playwrite NL", sans-serif;
+}
+
+.contact-title {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+
+.form-label {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: lighter;
+}
 @media only screen and (max-width: 600px) {
     .title-img {
         height: 65vh;
@@ -31,5 +68,9 @@ body {
     }
     #front-t {
         margin-bottom: 5px;
+    }
+
+    .page-title {
+        font-size: 3rem;
     }
 }
